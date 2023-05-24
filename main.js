@@ -51,11 +51,8 @@ console.log('Cумма четных позитивных элементов ра
 console.log('Cумма нечетных позитивных элементов равна ' + positiveOdd.reduce(sum))
 
 //9. Знайти добуток позитивних елементів.
-console.log('Произведение позитивных элементов равна ' + positive.reduce((a, b) => a*b))
+console.log('Произведение позитивных элементов равна ' + positive.reduce((a, b) => a * b))
 
 //10. Знайти найбільший серед елементів масиву, ост альні обнулити.
 const newArray = array.fill(0, 0, array.indexOf(array.reduce(maxNumber))).fill(0, ordinalMaxNumber, array.length)
 console.log(newArray)
-
-
-
