@@ -1,15 +1,8 @@
 "use strict";
 
 const array = [16, -37, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51, 27, -63, 4, -54, 76, -4, 12, -35, 4, 47]
-const positive = []
-const negative = []
-
-array.forEach((number) => {
-    if (number < 0) {
-        negative.push(number)
-    } else positive.push(number)
-})
-
+const positive = array.filter((num) => num > 0)
+const negative = array.filter((num) => num < 0)
 const positiveEven = positive.filter((num) => num % 2 === 0)
 const positiveOdd = positive.filter((num) => num % 2 === 1)
 
