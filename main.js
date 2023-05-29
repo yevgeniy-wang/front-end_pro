@@ -19,7 +19,7 @@ let array = new Array(+arrLength).fill(null)
 array = array.map(() => {
     const value = prompt('Enter your value')
 //все кроме чисел будет преврашаться в 0
-    if (!isNaN(+value) && value >= 0) {
+    if (!isNaN(+value)) {
         return +value
     } else return 0
 })
