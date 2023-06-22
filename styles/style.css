@@ -1,0 +1,15 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: center;
+}
+.slider__image {
+  width: 900px;
+  height: 500px;
+}
+.slider__prev-btn {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
