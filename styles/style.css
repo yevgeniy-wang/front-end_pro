@@ -1,0 +1,19 @@
+.smile-list {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: space-evenly;
+  height: 150px;
+}
+
+.smile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.smile-item__btn:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
