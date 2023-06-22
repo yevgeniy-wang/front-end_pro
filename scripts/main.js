@@ -18,7 +18,7 @@ generateSlider()
 
 slider.addEventListener('click', eventHandler)
 
-function generateSlider(){
+function generateSlider() {
     prevBtn.classList.add('slider__prev-btn')
     prevBtn.innerHTML = '<i class ="fa-solid fa-chevron-left fa-2xl"></i>'
     nextBtn.classList.add('slider__next-btn')
@@ -31,21 +31,21 @@ function generateSlider(){
     image.src = photos[index]
 }
 
-function eventHandler(event){
+function eventHandler(event) {
     const targetClassList = event.target.classList
 
-    if (targetClassList.contains('slider__prev-btn') || targetClassList.contains('fa-chevron-left')){
+    if (targetClassList.contains('slider__prev-btn') || targetClassList.contains('fa-chevron-left')) {
         index--
         hideAndDisplayBtns(photos)
-    } else if (targetClassList.contains('slider__next-btn') || targetClassList.contains('fa-chevron-right')){
+    } else if (targetClassList.contains('slider__next-btn') || targetClassList.contains('fa-chevron-right')) {
         index++
         hideAndDisplayBtns(photos)
     }
 }
 
-function hideAndDisplayBtns(array){
+function hideAndDisplayBtns(array) {
     if (index === 0) prevBtn.style.display = 'none'
-    if (index !== 0){
+    if (index !== 0) {
         prevBtn.style.display = 'block'
         nextBtn.style.display = 'block'
     }

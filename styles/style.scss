@@ -5,15 +5,15 @@
   justify-content: $justify-content;
 }
 
-.slider{
+.slider {
   @include flex(row, center, initial);
 
-  &__image{
+  &__image {
     width: 900px;
     height: 500px;
   }
 
-  &__prev-btn{
+  &__prev-btn {
     display: none;
   }
 }
