@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 1.75rem;
+  width: 15vw;
+  gap: 2vw;
+  background: rgba(217, 217, 217, 0.5);
+  padding: 1vh 0;
+  height: 99vh;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  gap: 1.5vw;
+  padding: 1vw 0;
+  background: rgba(217, 217, 217, 0.5);
+  width: 20vw;
+  height: 98vh;
+  transition: 1s;
+}
+.cart__btn {
+  padding: 20px;
+  cursor: pointer;
+}
+.cart__buy-btn {
+  background: #D9D9D9;
+  border-radius: 30px;
+  padding: 1vw 3vw;
+  color: black;
+  align-self: center;
+}
+.cart--closed {
+  transform: translate(16vw);
+}
+.cart span {
+  align-self: center;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 8px;
+  background: #D9D9D9;
+  padding: 1vw;
+  width: 5vw;
+}
+.product__amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.fa-minus, .fa-plus, .fa-trash-can {
+  cursor: pointer;
+}
+
+.orders {
+  width: 63vw;
+  padding: 1vw;
+}
+.orders__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.orders__container div {
+  width: 95%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*# sourceMappingURL=orders.css.map */

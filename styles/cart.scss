@@ -1,0 +1,54 @@
+.cart {
+  @include flex(column, initial, initial);
+  @include Roboto(1rem, 1.25rem);
+  gap: 1.5vw;
+  padding: 1vw 0;
+  background: $cart-bg;
+  width: 20vw;
+  height: 98vh;
+  transition: 1s;
+
+  &__btn {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  &__buy-btn {
+    background: $product-color;
+    border-radius: 30px;
+    padding: 1vw 3vw;
+    color: black;
+    align-self: center;
+  }
+
+  &--closed {
+    transform: translate(16vw);
+  }
+
+  span {
+    align-self: center;
+  }
+}
+
+.product-container {
+  @include flex(row, space-evenly, center);
+  padding: 0 2vw;
+}
+
+.product {
+  @include flex(column, space-around, center);
+  gap: 0.5vw;
+  border-radius: 8px;
+  background: $product-color;
+  padding: 1vw;
+  width: 5vw;
+
+  &__amount {
+    @include flex(row, space-around, center);
+    width: 100%;
+  }
+}
+
+.fa-minus, .fa-plus, .fa-trash-can {
+  cursor: pointer;
+}

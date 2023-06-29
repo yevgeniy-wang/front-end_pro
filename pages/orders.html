@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Orders</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="../styles/orders.css" rel="stylesheet">
+	<link href="../styles/reset.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b8e4c6f0e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="nav">
+			<li><a class="nav__link" href="../index.html">Categories</a></li>
+			<li><a class="nav__link" href="#z">Orders</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section class="orders">
+	</section>
+	<section class="cart cart--closed">
+		<i class="cart__btn fa-solid fa-cart-shopping fa-2xl"></i>
+		<span class="cart__final-price"></span>
+		<a class="cart__buy-btn">Buy</a>
+	</section>
+</main>
+<template id="order">
+	<div class="orders__container">
+		<div>
+			<button class="accordion"></button>
+			<div class="panel"></div>
+		</div>
+		<i class="fa-regular fa-trash-can fa-xl"></i>
+	</div>
+
+</template>
+<template id="product">
+	<div class="cart__product-container product-container">
+		<div class="product">
+			<h3 class="product__name">Product name</h3>
+			<div class="product__amount">
+				<button class="fa-solid fa-minus fa-xl"></button>
+				<span class="product__quantity">1</span>
+				<button class="fa-solid fa-plus fa-xl"></button>
+			</div>
+		</div>
+		<span class="product__price"></span>
+		<i class="fa-regular fa-trash-can fa-xl"></i>
+	</div>
+</template>
+<script src="../scripts/cart.js"></script>
+<script src="../scripts/orders.js"></script>
+</body>
+</html>

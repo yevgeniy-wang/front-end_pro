@@ -1,0 +1,37 @@
+@mixin Roboto($font-size, $line-height) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+$product-color: #D9D9D9;
+$cart-bg: rgba(217, 217, 217, 0.50);
+$close-btn: #d40c2a;
+
+body {
+  @include flex(row, initial, initial);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  @include flex(row, initial, initial);
+}
+
+.nav {
+  @include flex(column, initial, center);
+  @include Roboto(1.625rem, 1.75rem);
+  width: 15vw;
+  gap: 2vw;
+  background: $cart-bg;
+  padding: 1vh 0;
+  height: 99vh;
+}

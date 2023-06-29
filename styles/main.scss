@@ -1,0 +1,22 @@
+@import "navigation";
+@import "cart";
+
+.categories-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2vw;
+  grid-column-gap: 5vw;
+  justify-items: center;
+  padding: 2vw 0;
+  width: 65vw;
+
+  &__categories-item {
+    @include Roboto(1.625rem, 1.75rem);
+    cursor: pointer;
+  }
+}
+
+
+
+
+
