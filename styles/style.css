@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: center;
+}
+.slider__planet-container {
+  padding: 20px;
+  width: 500px;
+}
+.slider__prev-btn {
+  display: none;
+}
+
+.planet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
