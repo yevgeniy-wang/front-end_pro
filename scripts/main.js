@@ -1,4 +1,4 @@
-class Hamburger{
+class Hamburger {
     static SIZE_SMALL = 'small'
     static SIZE_BIG = 'big'
     static STUFFING_CHEESE = 'cheese'
@@ -6,6 +6,7 @@ class Hamburger{
     static STUFFING_POTATO = 'potato'
     static TOPPING_MAYO = 'mayo'
     static TOPPING_SPICES = 'spices'
+
     constructor(size, stuffing) {
         this._price = 0
         this._calories = 0
@@ -13,25 +14,26 @@ class Hamburger{
         this.stuffing = stuffing
 
     }
-    set size(value){
+
+    set size(value) {
         this._size = value
 
-        switch (value){
+        switch (value) {
             case 'small':
                 this.price = 50
                 this.calories = 20
                 break
-            case 'big':
+            default:
                 this.price = 100
                 this.calories = 40
                 break
         }
     }
 
-    set stuffing(value){
+    set stuffing(value) {
         this._stuffing = value
 
-        switch (value){
+        switch (value) {
             case 'cheese':
                 this.price = 10
                 this.calories = 20
@@ -44,28 +46,34 @@ class Hamburger{
                 this.price = 15
                 this.calories = 10
                 break
+           default:
+                alert('no topping found')
+                break
         }
     }
 
-    set price(value){
+    set price(value) {
         this._price += value
     }
-    set calories(value){
+
+    set calories(value) {
         this._calories += value
     }
-    get calculatePrice (){
+
+    get calculatePrice() {
         return this._price
     }
-    get calculateCalories(){
+
+    get calculateCalories() {
         return this._calories
     }
 
-    addTopping(value){
-        switch (value){
+    addTopping(value) {
+        switch (value) {
             case 'spices':
                 this.price = 15
                 break
-            case 'mayo':
+            default:
                 this.price = 20
                 this.calories = 5
                 break
